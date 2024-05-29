@@ -119,7 +119,7 @@ svg * {
   --color-light-gray: #c4c4c4;
 
   --border-radius: 30px;
-  --border: 1px solid var(var(--color-light));
+  --border: 1px solid var(--color-light);
 
   --font-family-base: "Heebo", sans-serif;
   --font-family-accent: "Yantramanav", sans-serif;
@@ -183,6 +183,7 @@ h6 {
   line-height: 2;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+  white-space: nowrap;
   background-color: var(--color-light);
   border: none;
   border-radius: var(--border-radius);
@@ -197,6 +198,10 @@ h6 {
   justify-content: space-between;
   align-items: center;
   column-gap: 20px;
+}
+
+.header-logo {
+  flex-shrink: 0;
 }
 
 .header-menu-list {
@@ -227,4 +232,30 @@ h6 {
 .header-actions {
   display: flex;
   column-gap: 40px;
+}
+
+.header-burger-button {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 4px;
+  width: 40px;
+  height: 40px;
+  color: var(--color-light);
+  background-color: transparent;
+  border: var(--border);
+  border-radius: 50%;
+}
+
+.header-burger-button:hover {
+  color: var(--color-light-gray);
+  border-color: currentColor;
+}
+
+.header-burger-button-line {
+  width: 6px;
+  height: 1px;
+  background-color: currentColor;
+  padding-left: 8px;
+  box-shadow: 16px 0 0 currentColor;
 }
