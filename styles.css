@@ -173,6 +173,25 @@ h6 {
   text-transform: uppercase;
 }
 
+.button {
+  display: inline-flex;
+  align-items: center;
+  height: 38px;
+  padding-inline: 26px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  background-color: var(--color-light);
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+.button:hover {
+  background-color: var(--color-light-gray);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -203,4 +222,9 @@ h6 {
   height: 5px;
   background-color: currentColor;
   border-radius: 50%;
+}
+
+.header-actions {
+  display: flex;
+  column-gap: 40px;
 }
