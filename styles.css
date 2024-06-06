@@ -444,6 +444,14 @@ h6 {
   margin-bottom: 37px;
 }
 
+.training-types {
+  max-width: 1920px;
+  margin-inline: auto;
+  padding-inline: auto;
+  padding-top: 70px;
+  padding-bottom: 120px;
+}
+
 @media (max-width: 1919px) {
   .motivation-card-image {
     margin-block: -20px;
