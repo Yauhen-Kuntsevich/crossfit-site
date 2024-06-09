@@ -745,6 +745,10 @@ h6 {
     display: flex;
     flex-direction: column-reverse;
   }
+
+  .family-image {
+    height: 360px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -834,5 +838,18 @@ h6 {
 
   .location-description {
     margin-bottom: 20px;
+  }
+
+  .family-image {
+    height: 180px;
+  }
+
+  .family-header {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .family-body {
+    column-gap: 12px;
   }
 }
