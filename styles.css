@@ -136,6 +136,22 @@ svg * {
   --header-height: 90px;
 }
 
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-dark);
+  margin-inline: 0.5em;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-light-gray-alternate);
+  border: 0.25em solid var(--color-dark);
+  border-radius: 100vw;
+}
+
 body {
   font-family: var(--font-family-base);
   font-weight: 300;
@@ -697,6 +713,22 @@ input[type="number"] {
   overflow-x: scroll;
 }
 
+.family-body::-webkit-scrollbar {
+  height: 1em;
+}
+
+.family-body::-webkit-scrollbar-track {
+  background-color: var(--color-dark);
+  margin-inline: 0.5em;
+  border-radius: 100vw;
+}
+
+.family-body::-webkit-scrollbar-thumb {
+  background-color: var(--color-light-gray-alternate);
+  border: 0.25em solid var(--color-dark);
+  border-radius: 100vw;
+}
+
 .family-image {
   scroll-snap-align: start;
 }
@@ -961,6 +993,7 @@ input[type="number"] {
   }
 
   .banner {
+    min-height: calc(50vh - var(--header-height));
     row-gap: 10px;
   }
 
