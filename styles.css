@@ -136,6 +136,22 @@ svg * {
   --header-height: 90px;
 }
 
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-dark);
+  margin-inline: 0.5em;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-light-gray-alternate);
+  border: 0.25em solid var(--color-dark);
+  border-radius: 100vw;
+}
+
 body {
   font-family: var(--font-family-base);
   font-weight: 300;
