@@ -993,6 +993,7 @@ input[type="number"] {
   }
 
   .banner {
+    min-height: calc(50vh - var(--header-height));
     row-gap: 10px;
   }
 
